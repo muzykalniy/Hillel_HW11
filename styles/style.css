@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: "TT Norms";
+}
+
+body {
+  margin: 0;
+}
+
+/* Первая страница  */
+
+.header-main {
+  margin: 0;
+  padding: 50px 0 48px 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+  border-radius: 0px 0px 12px 12px;
+}
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  margin: 0;
+  padding: 0;
+}
+.wrapper_header {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+}
+/* =======Костылял логотип======== */
+.logo1st {
+  display: inline-block;
+  vertical-align: top;
+}
+.logo2nd {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.logo_special {
+  color: #f0145a;
+  font-size: 48px;
+  font-weight: bold;
+}
+.word1 {
+  color: #ffff;
+  font-size: 48px;
+  font-weight: bold;
+}
+.logo .word2 {
+  font-size: 38px;
+  font-weight: 300;
+  font-style: normal;
+  color: #ffffff;
+}
+.logo2nd.logo-image {
+  width: 41.31px;
+  height: 46.9px;
+}
+.logo-subtitle {
+  text-transform: uppercase;
+  font-size: 9px;
+  color: #ffff;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+/* ============ */
+.wrapper_info-nav {
+}
+
+.info {
+}
+.icon1 {
+  color: #b3b3ba;
+}
+.nav {
+}
+/* ==========Конец первой страницы============ */
