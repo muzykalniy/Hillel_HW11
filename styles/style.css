@@ -11,7 +11,7 @@ body {
 
 .header-main {
   margin: 0;
-  padding: 50px 0 48px 0;
+  padding-top: 50px;
   min-height: 100vh;
   background: linear-gradient(
     228.57deg,
@@ -119,6 +119,9 @@ li.info-nav-item a {
   font-size: 16px;
   color: #b3b3ba;
 }
+.info-nav-item2 a:hover {
+  color: tomato;
+}
 .info-nav-item2.item_info-tel .link__tel {
   font-weight: 600;
 }
@@ -161,20 +164,17 @@ li.info-nav-item a {
   background-clip: text;
   background-image: linear-gradient(to right, #f0145a 0%, #ef8080 100%);
 }
-
 .main {
   margin-top: 68px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  align-content: space-between;
   justify-content: space-between;
-  align-items: space-between;
 }
-
 .main-items {
   width: 30%;
 }
-
 .main-title {
   padding: 0;
   margin-top: 20px;
@@ -187,6 +187,12 @@ li.info-nav-item a {
   font-size: 18px;
   color: #ffffff;
 }
+.main .main-items {
+  margin-bottom: 48px;
+}
 /* ======КОНЕЦ СЕКЦИИ ОБЩЕЙ ИНФОРМАЦИИ======= */
 
 /* ==========Конец первой страницы============ */
+.sdll {
+  margin-top: 60px;
+}
