@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  min-width: 1230px;
 }
 
 /* Первая страница  */
@@ -20,6 +21,7 @@ body {
     #643e72 87.46%
   );
   border-radius: 0px 0px 12px 12px;
+  box-shadow: 0 40px 0 -30px #cacadb, 0 70px 0 -50px #e7e7f2;
 }
 .container {
   max-width: 1290px;
@@ -193,7 +195,96 @@ li.info-nav-item a {
 /* ======КОНЕЦ СЕКЦИИ ОБЩЕЙ ИНФОРМАЦИИ======= */
 
 /* ==========Конец первой страницы============ */
+/* Успешные кейсы */
+.section-cases {
+  margin-top: 60px;
+  padding: 0;
+  background-color: #f5f5fa;
+  border-radius: 12px 12px 12px 12px;
+}
 
+/* Блок 1 */
+.cases-wrapper__block {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+}
+.item__block1 {
+  width: 33.3%;
+  padding: 20px 0 20px 20px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f0145a;
+}
+.item__block1 {
+  border: 1px solid #ffffff;
+}
+.item__block1:nth-child(2) {
+  border-bottom: none;
+}
+.item__block1:nth-child(3) {
+  border-bottom: none;
+  border-right: none;
+}
+/* --------------- */
+/* Блок 2 */
+.item__block2 {
+  margin: 0;
+  width: 33.3%;
+  padding: 48px 20px 20px 20px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #686887;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0px;
+}
+.item__block2:nth-child(2) {
+  border-top: none;
+}
+.item__block2:nth-child(3) {
+  border-right: none;
+  border-top: none;
+}
+.inner-item {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #b3b3ba;
+}
+/* ----------------------- */
+
+/* Блок 3 */
+.item__block3 {
+  margin: 0;
+  width: 33.3%;
+  padding: 20px 20px 20px 20px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #686887;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0px;
+}
+.item__block3:first-child {
+  width: 20%;
+}
+.item__block3:nth-child(2),
+.item__block3:nth-child(3) {
+  width: 40%;
+  padding-top: 76px;
+}
+/* ------------------------ */
+/* ====================== */
 /* Список компаний */
 .subtitle-main-wrapper {
   margin-top: 30px;
