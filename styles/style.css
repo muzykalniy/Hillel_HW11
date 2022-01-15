@@ -5,7 +5,11 @@
 
 body {
   margin: 0;
-  min-width: 1230px; /* СДЕЛАЛ, ЧТОБЫ НАВИГАЦИЯ НЕ НАЧАЛА СЪЕЗЖАТЬ */
+}
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Первая страница  */
@@ -43,11 +47,7 @@ body {
   background-color: #e7e7f2;
   border-radius: 0px 0px 12px 12px;
 }
-.container {
-  max-width: 1290px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+
 .header {
   margin: 0;
   padding: 0;
@@ -190,12 +190,13 @@ li.info-nav-item a {
   margin-top: 68px;
   padding: 0;
   display: flex;
+  gap: 58px 40px;
   flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
 }
 .main-items {
-  width: 30%;
+  flex-basis: 335px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .main-title {
   padding: 0;
@@ -208,9 +209,6 @@ li.info-nav-item a {
   margin-top: 15px;
   font-size: 18px;
   color: #ffffff;
-}
-.main .main-items {
-  margin-bottom: 48px;
 }
 /* ======КОНЕЦ СЕКЦИИ ОБЩЕЙ ИНФОРМАЦИИ======= */
 
