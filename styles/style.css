@@ -5,12 +5,13 @@
 
 body {
   margin: 0;
-  min-width: 1230px;
+  min-width: 1230px; /* СДЕЛАЛ, ЧТОБЫ НАВИГАЦИЯ НЕ НАЧАЛА СЪЕЗЖАТЬ */
 }
 
 /* Первая страница  */
 
 .header-main {
+  position: relative;
   margin: 0;
   padding-top: 50px;
   min-height: 100vh;
@@ -21,7 +22,26 @@ body {
     #643e72 87.46%
   );
   border-radius: 0px 0px 12px 12px;
-  box-shadow: 0 40px 0 -30px #cacadb, 0 70px 0 -50px #e7e7f2;
+}
+.header-main::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  left: 20px;
+  height: 10px;
+  background-color: #cacadb;
+  border-radius: 0px 0px 12px 12px;
+}
+.header-main::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 40px;
+  left: 40px;
+  height: 10px;
+  background-color: #e7e7f2;
+  border-radius: 0px 0px 12px 12px;
 }
 .container {
   max-width: 1290px;
