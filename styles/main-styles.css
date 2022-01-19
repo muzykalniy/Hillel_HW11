@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  font-family: "TT Norms";
+}
+
+body {
+  margin: 0;
+}
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

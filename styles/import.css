@@ -1,0 +1,6 @@
+/* Главные стили*/
+@import url("main-styles.css");
+/* Послуги */
+@import url("services.css");
+/* Адаптив мобильный*/
+@import url("mobile.css");
