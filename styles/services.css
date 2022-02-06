@@ -366,9 +366,7 @@
   margin: 0;
   padding-top: 32px;
   padding-bottom: 60px;
-  width: 100%;
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
 }
 .nav-wrapper {
@@ -376,75 +374,74 @@
   padding: 0;
   width: 35%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 22px 0;
 }
-.nav-wrapper__item1 a {
+.address-footer {
+  margin-right: 31px;
   text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #323264;
 }
-.nav-wrapper__item1,
-.nav-wrapper__item3 {
-  list-style: none;
+.address-footer:hover,
+.map:hover,
+.phone-number_footer:hover,
+.mail-footer:hover {
+  text-decoration: underline;
 }
-.nav-wrapper__item2 a {
-  font-style: normal;
+.map {
+  display: flex;
+  align-items: center;
   font-weight: bold;
+  text-decoration: none;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  text-decoration: none;
   color: #24a3ff;
 }
-.nav-wrapper__item2 {
-  margin-left: 47px;
-}
-.nav-wrapper__item3 i {
-  color: #24a3ff;
+.social-link__footer {
   font-size: 38px;
-}
-.nav-wrapper__item4-color a {
-  font-style: normal;
-  font-weight: bold;
   text-decoration: none;
+  color: #24a3ff;
+}
+.phone-number_footer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   color: #46466e;
 }
-.nav-wrapper__item5 a {
-  font-style: normal;
+.mail-footer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  text-decoration: none;
   color: #24a3ff;
 }
 
+.map::before,
+.phone-number_footer::before,
+.mail-footer::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #e6e6f0;
+}
 .copyright-wrapper {
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   color: #b3b3ba;
 }
-.nav-wrapper__item {
-  margin-top: 22px;
-}
-.nav-wrapper__item4 {
-  margin-left: 27px;
-}
 
-.nav-wrapper__item5 {
-  margin-left: 32px;
-}
-.nav-wrapper__link a:hover {
-  text-decoration: underline;
-  color: tomato;
-}
 /* =======Конец футера======== */
