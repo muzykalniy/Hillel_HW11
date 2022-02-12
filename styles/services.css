@@ -235,99 +235,73 @@
 }
 /* ====================== */
 
-/* ===========УСПЕШНЫЕ КЕЙСЫ=========*/
+/* ===========Кейсы=========*/
+.cases {
+  padding-top: 40px;
+}
 .cases-list {
-  /* Skip default styles for ul */
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-
-  /* Postioning */
   display: flex;
-  flex-wrap: wrap;
-  gap: 2px;
-
   border-radius: 12px;
-
-  /* Обрезаем вылезающие уголки контента по бордер-радиусу */
   overflow: hidden;
+  gap: var(--base-gap);
+  flex-wrap: wrap;
 }
 
 .cases-item {
-  flex-grow: 1;
-}
-
-.case-hillel,
-.case-wannabiz,
-.case-tapgerine {
-  flex-basis: calc(100% / 3 - 2px);
-}
-
-.case-3dlook {
-  flex-basis: 318px;
-}
-
-.case-adtelligent {
-  flex-basis: 451px;
-}
-
-.case-clikky {
-  flex-basis: 545px;
-}
-
-.case-hillel {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.case-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 100%;
+  flex-grow: 1;
   padding: 20px;
   background-color: #f5f5fa;
-  text-decoration: none;
 }
-
-.case-hillel > .case-card {
-  min-height: auto;
-}
-
-.case-hillel > a.case-card {
+.cases-item-wrapper {
   flex-grow: 1;
 }
-
-.case-name {
-  margin: 0;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 500;
-  color: #686887;
+.cases-item-wrapper,
+.cases-item--wannabiz,
+.cases-item--tapgerine {
+  flex-basis: calc(100% / 3 - var(--base-gap));
 }
-
-.case-company {
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 26px;
-  color: #b3b3ba;
+.cases-item--3dlook {
+  flex-basis: calc(320px - var(--base-gap));
 }
-/* Кейсы */
-.cases {
-  padding-top: 40px;
-  background-color: #fff;
+.cases-item--adtelligent {
+  flex-basis: calc(453px - var(--base-gap));
 }
-
+.cases-item--clikky {
+  flex-basis: calc(547px - var(--base-gap));
+}
 .cases-title {
   margin: 0;
+  margin-bottom: var(--base-gap);
+  background-color: #f5f5fa;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #f0145a;
 }
-
+.cases-item-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+.cases-item-link {
+  color: #686887;
+  text-decoration: none;
+  font-weight: 400;
+}
+.cases-item-link:hover {
+  color: tomato;
+}
+.cases-item-company {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #b3b3ba;
+}
 /* ================== */
 
 /* ===========Список компаний=========== */

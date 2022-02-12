@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px) {
+  .services {
+    padding: 20px 0;
+  }
   .header {
     flex-direction: column-reverse;
     align-items: stretch;
@@ -8,9 +11,22 @@
   .logo-container {
     padding: 10px 0;
   }
-
+  .logo {
+    max-width: 80px;
+  }
+  .logo-slash {
+    max-height: 24px;
+  }
+  .logo-text {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .logo-symbol {
+    max-width: 24px;
+  }
   .logo-container .nav-open {
     display: block;
+    padding: 0;
   }
 
   .header-contacts {
@@ -24,7 +40,11 @@
   .social-link::after {
     display: none;
   }
-
+  .phone-number {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
   .header-nav {
     display: none;
     flex-direction: column;
@@ -55,6 +75,19 @@
     text-align: center;
     font-size: 24px;
     line-height: 28px;
+  }
+  .services-cards {
+    margin-top: 20px;
+  }
+  .services-card .card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .cases {
+    margin-top: 40px;
+    padding: 0;
   }
   .company-link {
     flex-basis: calc(100% / 2);

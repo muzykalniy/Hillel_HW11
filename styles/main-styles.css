@@ -1,3 +1,8 @@
+/* Переменная в css */
+:root {
+  --base-gap: 2px;
+}
+/* ========== */
 * {
   box-sizing: border-box;
   font-family: "TT Norms";
